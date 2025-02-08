@@ -1,13 +1,11 @@
 import Tabs, { TabProps } from "src/Components/Tabs";
 import "src/Views/main.scss"
+import CostTracker from "./CostTracker";
 
 const tabsContext: Array<TabProps> = [
   {
-    title: "Household cost tracker",
-    children: <div>
-      <p>asdasd</p>
-      <p>444345345</p>
-    </div>
+    title: "Cost tracker",
+    children: <CostTracker />
   },
   {
     title: "Training tracker",
@@ -22,6 +20,7 @@ const tabsContext: Array<TabProps> = [
 const Main = () => {
   return (
     <div className="main">
+      <h1 className="main-title">Trackers</h1>
       <Tabs tabs={tabsContext} />
     </div>
   );
