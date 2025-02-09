@@ -104,13 +104,46 @@ html {
 body {
   background-color: #111927;
   background-image:
-    radial-gradient(at 47% 33%, hsl(162.80, 92%, 30%) 0, transparent 59%),
+    radial-gradient(at 47% 33%, hsl(162.80, 92%, 30%) 0, transparent 85%),
     radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }
 
 .--glass {
   backdrop-filter: blur(7px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(17, 25, 40, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+button {
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &.--small-font {
+    font-size: 10px;
+  }
+}
+
+.btn-primary {
+  background-color: #2ea44f;
+  border: 1px solid rgba(74, 201, 110, 0.75);
+  box-shadow: 0 1px 1px rgba(18, 21, 26, .075);
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-secondary {
+  background-color: #4b5663;
+  border: 1px solid rgba(116, 119, 122, 0.65);
+  box-shadow: 0 1px 1px rgba(18, 21, 26, .075);
+  color: #fff;
+  font-weight: 500;
 }

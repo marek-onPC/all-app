@@ -1,3 +1,7 @@
+import { useState } from "react";
+import MonthPicker from "src/Components/MonthPicker";
+import "src/Views/cost-tracker.scss"
+
 const DUMMY_DATA = [
   {
     cost: 100,
@@ -15,9 +19,16 @@ const DUMMY_DATA = [
     name: "Food"
   }
 ]
+
 const CostTracker = () => {
+  const [selectedMonth, setSelectedMonth] = useState<Date | null>(null);
+
   return <div className="cost-tracker">
-    <button className="cost-tracker-button">Add cost</button>
+    <div className="cost-tracker-header">
+      <button className="btn-primary">Add cost</button>
+      <MonthPicker selectedMonth={selectedMonth} setSelectedMonth={setSelectedMonth} />
+
+    </div>
     <table>
       <thead>
         <tr>

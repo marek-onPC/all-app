@@ -14,7 +14,7 @@
     cursor: pointer;
     transition: all 0.5s;
     backdrop-filter: blur(7px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(17, 25, 40, 0.35);
     color: rgba(255, 255, 255, 0.5);
     border-radius: 0;
 
@@ -33,7 +33,7 @@
 
     &.--active {
       backdrop-filter: blur(7px) saturate(180%);
-      background-color: rgba(255, 255, 255, 0.35);
+      background-color: rgba(17, 25, 40, 0.75);
       color: rgba(255, 255, 255, 1);
     }
   }
